@@ -7,4 +7,4 @@ clone anywhere you wish with
 
 and in your `~/.bash_profile` or `~/.profile` (depending on which you are using) add
 
-`source '<cloned_directory>/profile'`
+`source 'path/to/cloned/direcotry/profile'`
