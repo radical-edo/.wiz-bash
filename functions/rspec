@@ -1,0 +1,4 @@
+function clrspec() {
+    clear;
+    rspec $1;
+}
