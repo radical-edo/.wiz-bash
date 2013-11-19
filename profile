@@ -18,12 +18,4 @@ alias ll='ls -l'
 alias la='ls -la'
 alias erudion_chat='RAILS_ENV=development bundle exec rackup private_pub.ru -s thin -E production'
 
-alias logs='git log'
-alias stats='git status'
-alias commit='git commit -am'
-alias push='git push'
-
 alias be='bundle exec'
-
-alias scan_files='grep -Hre'
-
