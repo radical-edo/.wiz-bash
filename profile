@@ -1,5 +1,5 @@
 if [ "$TERM" = xterm -a "$COLORTERM" = "gnome-terminal" ]; then
-    TERM=gnome-256color
+    TERM=xterm-256color
 fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -7,12 +7,13 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DIR/themes/sexy_solarized
 source $DIR/functions/rspec
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+
 if [ -f ~/.wiz-bash/functions/git-completion.bash ]; then
   . ~/.wiz-bash/functions/git-completion.bash
 fi
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 alias ll='ls -l'
 alias la='ls -la'
