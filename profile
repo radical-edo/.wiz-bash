@@ -20,3 +20,5 @@ alias la='ls -la'
 alias erudion_chat='RAILS_ENV=development bundle exec rackup private_pub.ru -s thin -E production'
 
 alias be='bundle exec'
+
+alias dserv='./bin/devserver'
