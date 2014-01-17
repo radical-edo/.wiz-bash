@@ -22,3 +22,4 @@ alias erudion_chat='RAILS_ENV=development bundle exec rackup private_pub.ru -s t
 alias be='bundle exec'
 
 alias dserv='./bin/devserver'
+alias coco='./bin/mocha'
