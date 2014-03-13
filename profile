@@ -15,6 +15,9 @@ if [ -f ~/.wiz-bash/functions/git-completion.bash ]; then
   . ~/.wiz-bash/functions/git-completion.bash
 fi
 
+alias vim='mvim -v'
+export EDITOR=vim
+
 alias ll='ls -l'
 alias la='ls -la'
 alias erudion_chat='RAILS_ENV=development bundle exec rackup private_pub.ru -s thin -E production'
