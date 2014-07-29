@@ -7,8 +7,11 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $DIR/themes/sexy_solarized
 source $DIR/functions/rspec
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+
+NVM_DIR="$HOME/.nvm"
+export PATH="$HOME/.rbenv/bin:$NVM_DIR:$PATH"
 eval "$(rbenv init -)"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
 if [ -f ~/.wiz-bash/functions/git-completion.bash ]; then
